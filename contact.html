@@ -1,45 +1,23 @@
-@@include('header.htm')
+<!doctype html>
+<title>Site Maintenance</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<style>
+  html, body { padding: 0; margin: 0; width: 100%; height: 100%; }
+  * {box-sizing: border-box;}
+  body { text-align: center; padding: 0; background: #d6433b; color: #fff; font-family: Open Sans; }
+  h1 { font-size: 50px; font-weight: 100; text-align: center;}
+  body { font-family: Open Sans; font-weight: 100; font-size: 20px; color: #fff; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+  article { display: block; width: 700px; padding: 50px; margin: 0 auto; }
+  a { color: #fff; font-weight: bold;}
+  a:hover { text-decoration: none; }
+  svg { width: 75px; margin-top: 1em; }
+</style>
 
-@@include('blocks/navigation.htm', {"contact": "active"})
-
-@@include('blocks/page-title.htm', {"page-link": "index.html", "page-title" : "Home" , "nasted" : "nasted" , "description" : "Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.", "single-page-title": "Contact Us" })
-
-<!-- contact -->
-<section class="section bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="section-title">Contact Us</h2>
-      </div>
+<article>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.24 202.24"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M101.12,0A101.12,101.12,0,1,0,202.24,101.12,101.12,101.12,0,0,0,101.12,0ZM159,148.76H43.28a11.57,11.57,0,0,1-10-17.34L91.09,31.16a11.57,11.57,0,0,1,20.06,0L169,131.43a11.57,11.57,0,0,1-10,17.34Z"/><path class="cls-1" d="M101.12,36.93h0L43.27,137.21H159L101.13,36.94Zm0,88.7a7.71,7.71,0,1,1,7.71-7.71A7.71,7.71,0,0,1,101.12,125.63Zm7.71-50.13a7.56,7.56,0,0,1-.11,1.3l-3.8,22.49a3.86,3.86,0,0,1-7.61,0l-3.8-22.49a8,8,0,0,1-.11-1.3,7.71,7.71,0,1,1,15.43,0Z"/></g></g></svg>
+    <h1>We&rsquo;ll be back soon!</h1>
+    <div>
+        <p>Sorry for the inconvenience. We&rsquo;re performing some maintenance at the moment. If you need to you can always follow us on <a href="http://www.twitter.com/">Twitter</a> for updates, otherwise we&rsquo;ll be back up shortly!</p>
+        <p>&mdash; The serah Team</p>
     </div>
-    <div class="row">
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="/contact.html" method="POST">
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name" required>
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email" required>
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject" required>
-          <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message" required></textarea>
-          <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
-        </form>
-      </div>
-      <div class="col-lg-5">
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt. Dolore, labore. Accusamus nulla sed cum aliquid exercitationem debitis error harum porro maxime quo iusto aliquam dicta modi earum fugiat, vel possimus commodi, deleniti et veniam, fuga ipsum praesentium. Odit unde optio nulla ipsum quae obcaecati! Quod esse natus quibusdam asperiores quam vel, tempore itaque architecto ducimus expedita</p>
-        <a href="tel:+8802057843248" class="text-color h5 d-block">+880 20 5784 3248</a>
-        <a href="mailto:yourmail@email.com" class="mb-5 text-color h5 d-block">yourmail@email.com</a>
-        <p>71 Shelton Street<br>London WC2H 9JQ England</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /contact -->
-
-<!-- gmap -->
-<section class="section pt-0">
-  <!-- Google Map -->
-  <div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
-</section>
-<!-- /gmap -->
-
-@@include('blocks/footer.htm')
-
-@@include('footer.htm')
+</article>
